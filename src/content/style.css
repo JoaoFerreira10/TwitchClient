@@ -1,0 +1,27 @@
+
+#search-bar-content{
+    background: #6441a4;
+}
+
+.item-header{
+    color: #6441a4 !important;
+    margin-top: 5px !important;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item:hover{
+    border: 1px solid #6142a7;
+}
+
+.dropdown-label{
+    color: white;
+    float: right;
+}
+
+.label-column{
+    padding-top: 20px !important;
+    padding-right: 0px !important;
+}
