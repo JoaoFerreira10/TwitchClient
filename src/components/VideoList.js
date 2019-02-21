@@ -7,8 +7,6 @@ const VideoList = ({videos, showVideo}) => {
         return <div>No results</div>;
 
     const videoList = videos.map( video => <VideoItem key={video._id} video={video} showVideo={showVideo}/>);
-
-    console.log("vid: "+videos);
     
     return (<div className="ui stackable grid">
             {videoList}

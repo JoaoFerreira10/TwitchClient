@@ -12,8 +12,7 @@ class App extends React.Component {
     showVideo = (video) => {
         this.setState({selectedVideo: video});
     }
-
-    
+  
     refreshVideoList = (numberOfSearchs) => {
         setInterval(() =>{ 
             this.getStreams(this.state.term, this.state.numberOfSearchs);
@@ -35,7 +34,6 @@ class App extends React.Component {
             this.refreshVideoList();
             this.setState({first: false});
         }
-
     }
 
     render(){

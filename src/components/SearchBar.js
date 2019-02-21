@@ -1,7 +1,7 @@
 import React from 'react';
 import '../content/style.css';
 import twitchLogo from '../content/twitch.jpg';
-import { Link, Redirect, withRouter } from 'react-router-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
@@ -34,7 +34,7 @@ class SearchBar extends React.Component {
                 <div className="thirteen wide column">
                     <form onSubmit={this.onFormSubmit} className="ui form">
                         <div className="field">
-                        <input type="text" value={this.state.search} onChange={this.onInputChange} placeholder="Search stream..." />
+                        <input id="search-bar-input" type="text" value={this.state.search} onChange={this.onInputChange} placeholder="Search stream..." />
                         </div>
                     </form>
                 </div>
